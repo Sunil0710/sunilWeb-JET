@@ -1,2 +1,2 @@
 # sunilWeb-Jet
-Web Portal created by using Oracle JET
+Web Portal created using Oracle JET

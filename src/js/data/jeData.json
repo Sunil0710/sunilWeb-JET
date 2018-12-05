@@ -1,0 +1,101 @@
+{
+    "experience": [
+        {
+            "id": "j1",
+            "name": "WealthPhase, Inc",
+            "sname":"wp",
+            "role": "UI  Developer",
+            "sdate": "09/16/2016",
+            "edate": "Present",
+            "description": "",
+            "responsibilities":[
+                {"duties":"Develop web application using Oracle JET, HTML 5, XHTML, CSS 3, JavaScript, Ajax, JSON, and JQuery."},
+                {"duties":"Use Oracle JET as a framework to create Single Page Application (SPA) to improve page performance, which can bind data to specific views."},
+                {"duties":"Use JavaScript DOM manipulation and JavaScript event to generate the data result in UI."},
+                {"duties":"Use AJAX frameworks like JQuery, JSON to develop rich GUIs and involved in performance tuning the website."},
+                {"duties":"Create and designe business applications using technologies like HTML, XHTML, and CSS based on the W3C standards."},
+                {"duties":"Use Knockout JS and Require JS framework to create a web pages along with HTML5 and CSS3."},
+                {"duties":"Create, update, and maintain web application to handle given requirements, some of them are store and retrieve data in the form of JSON, maintain workrooms related to finance, health, and user personal details."},
+                {"duties":"Consult with managerial and technical personnel to clarify program intent, identify problems, and suggest changes."},
+                {"duties":"Compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so other developers can understand the program intent and flow."},
+                {"duties":"Debugging the code through web developer tools, correct errors by making appropriate changes and rechecking the program to ensure that it is according to the given product requirements."},
+                {"duties":"Utilize Oracle JET composite component functionality through out the application to reuse the code, collection components like list view for displaying list of items, table view for populating user details."},
+                {"duties":"Utilize form component for gathering input from user, router component for navigating to different pages in the application, layout components for making the web application responsive."},
+                {"duties":"Apply visualization components for representing financial information which displays past, present, future information and to represent stock values, assets etc."},
+                {"duties":"Developed HTML prototypes and UI deliverables, such as wireframes, flowcharts, screen mock-ups, and interface design specifications."},
+                {"duties":"Used JavaScript DOM manipulation and JavaScript event to generate the data result in UI."},
+                {"duties":"Involved in Production Support and minor enhancements as per application requirements."}
+            ]
+        },
+        {
+            "id": "j2",
+            "name": "Selectsys India Pvt Ltd",
+            "sname":"ss",
+            "role": "Web Developer",
+            "sdate": "09/01/2012",
+            "edate": "09/28/2014",
+            "description": "",
+            "responsibilities":[
+                {"duties":"Developing webpages and designing process upon client approval build out of all user defined designs, UI components, etc."},
+                {"duties":"Optimizing and created dynamic websites and applications interfaces using HTML and CSS."},
+                {"duties":"Involved in development and designing of the applications with team and worked with content managers and designers to resolve the issues."},
+                {"duties":"Designed and Developed Java Script frame work which is wrapper on top of JQUERY frame work and AJAX based UI frame work for UI Configuration widgets. "},
+                {"duties":"Developed different JQuery component in MVC micro architecture framework which internally use various design pattern such as singleton, command, delegate, etc. "},
+                {"duties":"Used AJAX frameworks like JQuery, JSON to develop rich GUIs and involved in performance tuning the website."},
+                {"duties":"Created and designed business applications using technologies like HTML, XHTML, and CSS based on the W3C standards."},
+                {"duties":"Writing application level code to interact with the backend databases using SQL."},
+                {"duties":"Worked on Cross-Browser compatibility and fixed the bugs for the browsers."},
+                {"duties":"Created cross-browser compatible and standards-compliant CSS-based page layouts."},
+                {"duties":"Implementing and showing the output on user webpages and applications using received data from back end."},
+                {"duties":"Actively involved in designing, planning of applications and client defined requirements, with the front-end UI team."}
+            ]
+        },
+        {
+            "id": "j3",
+            "name": "Southerland",
+            "sname":"sl",
+            "role": "Web Developer",
+            "sdate": "04/07/2010",
+            "edate": "08/31/2012",
+            "description": "",
+            "responsibilities":[
+                {"duties":"Creating Brand Identity, Graphic Standards, and Guidelines."},
+                {"duties":"Providing required optimized graphics for the site. Crosschecking quality and standards of pages and graphics used for the site. Resolving all browser compatibility issues."},
+                {"duties":"Developed programs to port the xml data to database to make the website xml driven."},
+                {"duties":"Finding out the bugs, broken links, and missing images etc. and rectifying them."},
+                {"duties":"Created Master Pages, CSS Styles Sheets and Integrated to Silver light and got approval from Business Stake holders."},
+                {"duties":"Building a category wise client database."},
+                {"duties":"Promoting products through Mass Email Marketing (Design of Email newsletter, brochures, hoardings)."},
+                {"duties":"Developed Front end user form for Customers, Administrators of the System using HTML and CSS."},
+                {"duties":"Ongoing meetings with web redesign team for new updates and approved contents for templates."},
+                {"duties":"Complete design of mockup screens for final approval and clearance."}
+            ]
+        }
+    ],
+    "education": [
+        {
+            "id": "e1",
+            "name": "Campbellsville University",
+            "sname":"cu",
+            "degree": "Masters's degree, Information Technology",
+            "sdate": "10/23/2017",
+            "edate": "07/05/2019"
+        },
+        {
+            "id": "e2",
+            "name": "Virginia International University",
+            "sname":"viu",
+            "degree": "Masters's degree, Computer Software Engineering",
+            "sdate": "01/10/2015",
+            "edate": "07/15/2016"
+        },
+        {
+            "id": "e3",
+            "name": "J N T University",
+            "sname":"jntu",
+            "degree": "Bachelor of Technology - B.Tech, Computer Science",
+            "sdate": "10/07/2004",
+            "edate": "04/20/2008"
+        }
+    ]
+}

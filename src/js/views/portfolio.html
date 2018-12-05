@@ -1,0 +1,27 @@
+<div class="portfolioBackground">    
+</div>
+<div class="oj-hybrid-padding">
+    <div class="oj-flex">
+        <div class="oj-flex-item">
+            <oj-tab-bar selection="{{selectedItem}}" edge="top"
+                        class="oj-sm-justify-content-center oj-sm-condense">
+                <ul data-bind="foreach: tabItems">
+                    <li data-bind="attr: {id: id}">
+                        <a href="#" data-bind="text: title, attr:{  id: id+'-tab', 
+                                    'aria-controls': id+'-tab-panel'}" style="text-align: center;"></a>
+                    </li>
+                </ul>
+            </oj-tab-bar>
+
+            <oj-switcher value="[[selectedItem]]">
+                <!-- ko foreach: tabItems -->
+                <div role="tabpanel" data-bind="attr:{  slot: id, 
+                                                        id: id+'-tab-panel', 
+                                                        'aria-labelledby': id+'-tab'}">                    
+                    <div data-bind="ojModule: 'portfolioContent/'+id+'-tab-page'"></div>
+                </div>
+                <!-- /ko -->
+            </oj-switcher>
+        </div>
+    </div>
+</div>

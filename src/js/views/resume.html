@@ -1,0 +1,235 @@
+<div class="resumeBackground">    
+</div>
+<div class="oj-hybrid-padding">
+    <!--    <div class="progress oj-margin">
+            <div class="progress-bar" style="width: 50%;">50%</div>
+        </div>-->
+
+    <!--    start for about you flex   -->
+    <div class="oj-flex oj-sm-justify-content-center">
+        <div class="oj-flex-item">
+            <h3 data-bind="text: aboutYou" style="text-align: justify"></h3>
+        </div>
+    </div>
+    <!--    end for about you flex   -->
+    <div class="oj-flex oj-sm-only-flex-direction-column">
+        <div class="oj-flex-item oj-flex  oj-margin oj-sm-flex-direction-column">
+            <div class="oj-flex-item">
+                <!--    start for your Specialities flex   -->
+                <div class="oj-flex oj-sm-flex-direction-column oj-padding divBorder">
+                    <div class="oj-flex-item">
+                        <h2> My Specialities </h2>
+                    </div>
+                    <div class="oj-flex-item">
+                        <div class="oj-flex oj-sm-only-flex-direction-column oj-padding">
+                            <div class="oj-flex-item oj-margin ">
+                                <div>
+                                    <i class="far fa-window-maximize icon-style" style="font-size: 20px"></i> 
+                                    <span class="specTitle" style="margin-left: 10px">Web App</span> 
+                                </div> 
+                            </div>
+                            <div class="oj-flex-item oj-margin">
+                                <div>
+                                    <i class="fas fa-desktop icon-style" style="font-size: 20px"></i> 
+                                    <span class="specTitle" style="margin-left: 10px">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="oj-flex oj-sm-only-flex-direction-column oj-padding">
+                            <div class="oj-flex-item oj-margin">
+                                <div>
+                                    <i class="fas fa-mobile-alt icon-style" style="font-size: 20px"></i> 
+                                    <span class="specTitle" style="margin-left: 20px">Mobile Apps</span>
+                                </div>
+                            </div>
+                            <div class="oj-flex-item oj-margin">
+                                <div>
+                                    <i class="far fa-comment-alt icon-style" style="font-size: 20px"></i> 
+                                    <span class="specTitle" style="margin-left: 10px">Social Media</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+                <!--    end for your Specialities flex   -->
+                <!--    start for your Hobbies flex   -->
+                <div class="oj-flex oj-sm-flex-direction-column oj-padding divBorder">
+                    <div class="oj-flex-item">
+                        <h2> Hobbies & Interests </h2>
+                    </div>
+                    <div class="oj-flex-item oj-flex">
+                        <div class="oj-flex-item oj-margin">
+                            <div style="text-align: center">
+                                <i class="fas fa-headphones fa-2x icon-style"></i>
+                                <div class="specTitle" >Music</div>
+                            </div>                                    
+                        </div>
+                        <div class="oj-flex-item oj-margin">
+                            <div style="text-align: center">
+                                <i class="fas fa-plane fa-2x icon-style" data-fa-transform="rotate--30"></i>
+                                <div class="specTitle" >Traveling</div>
+                            </div>                                    
+                        </div>
+                        <div class="oj-flex-item oj-margin">
+                            <div style="text-align: center">
+                                <i class="fas fa-bicycle fa-2x icon-style"></i>
+                                <div class="specTitle" >Sports</div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!--    end for your Hobbies flex   -->
+            </div>
+        </div>
+        <div class="oj-flex-item oj-flex oj-sm-flex-direction-column">
+            <!--    start for your Skills flex   -->
+            <div class="oj-flex-item oj-margin divBorder">
+                <div class="oj-flex oj-padding">
+                    <h2> Skills </h2>
+                </div>
+                <div class="oj-flex">
+                    <div class="oj-flex-item">                                  
+                        <oj-list-view id="skillsListView" 
+                                      data="[[skillsDataProvider]]" 
+                                      item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('meter_template', true)]]"
+                                      style="border-width: 0px">
+                        </oj-list-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="oj-flex">
+        <!--    start for your Experience flex   -->
+        <div class="oj-flex-item oj-margin divBorder">
+            <div class="oj-flex oj-padding">
+                <div class="oj-flex-item">
+                    <!--<h2 class="oj-header-border"> Experience </h2>-->
+                    <h2> Experience </h2>
+                </div>
+            </div>
+            <div class="oj-flex">
+                <div class="oj-flex-item">
+                    <oj-list-view id="expListView" 
+                                  data="[[expDataProvider]]" 
+                                  item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('experience_template', true)]]"
+                                  style="border-width: 0px ">
+                    </oj-list-view>
+                </div>
+            </div>
+        </div>
+        <!--    end for your Experience flex   -->
+        <!--    start for your Education flex   -->
+        <div class="oj-flex-item oj-margin divBorder">
+            <div class="oj-flex oj-padding">
+                <div class="oj-flex-item">
+                    <!--<h2 class="oj-header-border"> Education </h2>-->
+                    <h2> Education </h2>
+                </div>               
+            </div>
+            <oj-list-view id="eduListView" 
+                          data="[[eduDataProvider]]" 
+                          item.renderer="[[oj.KnockoutTemplateUtils.getRenderer('education_template', true)]]"
+                          style="border-width: 0px">
+            </oj-list-view>
+        </div>
+        <!--    end for your Education flex   -->
+    </div>
+</div>
+
+<script type="text/html" id="meter_template">
+    <li data-bind="attr: {id: $data['name']}">
+        <oj-status-meter-gauge 
+            min="0" 
+            max="100" 
+            value="{{value}}"    
+            plot-area.rendered="on"
+            readonly
+            label="[[label]]"
+            color="#A28FC8"
+            animationOnDisplay="auto"
+            style="width:100%; border-radius: 50%" data-bind="attr: {id: $data['name']+'_Gauge'}" >
+        </oj-status-meter-gauge >
+    </li>
+</script>
+
+<script type="text/html" id="experience_template">
+    <li data-bind="click: $parent.getExpDetails, attr: {id: $data['id']}">
+        <div class="oj-flex flexBorder">
+            <div class="oj-flex-item oj-margin oj-sm-only-hide oj-md-2">
+                <div class=" oj-flex oj-sm-justify-content-center" style="padding-left: 10px">                 
+                    <img class="imageStyle" data-bind="attr:{id: id+'_logo',src: 'images/experience/'+id+'.png', alt: sname+' logo'}" />
+                </div>
+            </div>
+            <div class="oj-flex-item oj-flex oj-margin">
+                <div class="oj-flex-item oj-padding">
+                    <div class="role" data-bind="text: role"></div>
+                    <div class="degree" data-bind="text: name"></div>
+                    <div class="dates" data-bind="text: sdate + ' to ' + edate"></div>
+                </div>                
+            </div>
+        </div>
+    </li>
+</script>
+
+<script type="text/html" id="education_template">
+    <li data-bind="attr: {id: $data['id']}">
+        <div class="oj-flex flexBorder">
+            <div class="oj-flex-item oj-margin oj-sm-only-hide oj-md-2">
+                <div class=" oj-flex oj-sm-justify-content-center " style="padding-left: 10px">                 
+                    <img class="imageStyle" data-bind="attr:{id: id+'_logo',src: 'images/education/'+id+'.png', alt: sname+' logo'}" />
+                </div>
+            </div>
+            <div class="oj-flex-item oj-flex oj-margin oj-md-8 oj-xl-6">
+                <div class="oj-flex-item oj-padding">
+                    <div class="role" data-bind="text: name"></div>
+                    <div class="degree" data-bind="text: degree"></div>
+                    <div class="dates" data-bind="text: sdate + ' to ' + edate"></div>
+                </div>                
+            </div>
+        </div>
+    </li>
+</script>
+
+<oj-popup style="display:none; background: linear-gradient(to bottom, #A28FC8, #A3A6CD, #98AFD6);" class="popup-style"
+        id="expPopup"
+        tail="none" position.my.horizontal="center" position.my.vertical="bottom"
+        position.at.horizontal="center" position.at.vertical="bottom"
+        position.of="window" position.offset.y="-30"
+        modality="modal" 
+        data-bind="event:{'ojAnimateStart': startAnimationListener}"  
+          >
+    
+    <div class="oj-flex-bar popup-header oj-padding oj-header-border">
+        <div class="oj-flex-bar-start">
+            <div class="role" data-bind="text: name" style="font-weight: 700"></div>          
+        </div>
+        <div class="oj-flex-bar-end">
+            <div data-bind="click: closeExpPopup">
+                <i class="far fa-times-circle fa-2x"></i>
+            </div>
+        </div>
+    </div>
+    <div class="oj-flex popup-body oj-padding" style="border: 1px solid #d9dfe3; overflow: scroll">
+        <div>
+            <div class="role" data-bind="text: role"></div>
+            <div class="degree" data-bind="text: name"></div>
+            <span class="dates" data-bind="text: date"></span> &nbsp; <span style="color: #7a7e80"> &diams; </span> &nbsp; <span class="dates" data-bind="text: totalTime"></span>
+            <div class="description">                
+                <p data-bind="text: description"></p>
+            </div>
+            <div class="description">
+                <p data-bind="text: 'Responsibilities :'" style="font-weight: 600"></p>
+                <ul>
+                    <oj-bind-for-each data="[[respData]]" as="responsibility">
+                        <template>
+                            <li>
+                                <oj-bind-text value="[[responsibility.data.duties]]"></oj-bind-text>
+                            </li><br/>
+                        </template>
+                    </oj-bind-for-each>
+                </ul>
+            </div>
+        </div>         
+    </div>
+</oj-popup>

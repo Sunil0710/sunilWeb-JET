@@ -1,0 +1,159 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 9, 2018, 4:01:43 PM
+    Author     : wealthphasedev2
+*/
+
+/*Animation for background image*/
+.pageBackground{
+    background-image: url('images/cold.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.pageBackground + * {
+    position: relative;
+}
+
+.zooming{
+    -moz-animation: zooming 18s infinite; 
+    -webkit-animation: zooming 18s infinite both; 
+    animation: zooming 18s infinite; 
+}
+
+@-moz-keyframes zooming { 
+    0% { -moz-transform: scale(1, 1); transform: scale(1, 1); }
+    50% { -moz-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+    100% { -moz-transform: scale(1, 1); transform: scale(1, 1); } 
+}
+@-webkit-keyframes zooming { 
+    0% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+    50% { -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+    100% { -webkit-transform: scale(1, 1); transform: scale(1, 1); } 
+}
+@keyframes zooming { 
+    0% { -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1); }
+    50% { -moz-transform: scale(1.1, 1.1); -ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
+    100% { -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1); } 
+}
+
+.v-center{
+    margin-top: 25vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#button1 .oj-button-button,
+#button2 .oj-button-button{
+    height:50px;
+    color: #FFFFFF;
+    background: transparent;
+    background-image: none;    
+    font-size: 11pt;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#button1 .oj-button-button{
+    background-color: #7FB840;
+    border-color: #7FB840;
+    border-radius: 100px;
+}
+
+#button2 .oj-button-button{ 
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 25px;
+}
+
+
+
+.text-large{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    /*font-family: "Poppins", Helvetica, Arial, sans-serif;*/
+}
+h1 em{
+    font-family: "Lora", Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+p.lead{
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.5);
+    font-family: "Roboto", sans-serif;  
+    font-weight: 100;
+}
+
+/* screen size iphone5/SE Vertical*/
+@media(min-width: 320px){
+
+}
+
+/* screen size iphone5/SE Horizantal*/
+@media(min-width: 568px){
+    p.lead{
+        text-align: center;
+    }
+}
+
+
+/* screen size iphone6/7/8/X Vertical*/
+@media(min-width: 375px){
+
+}
+
+/* screen size iphone6/7/8 Horizantal*/
+@media(min-width: 667px){
+    
+}
+
+/* screen size iphone6/7/8 Plus Vertical*/
+@media(min-width: 414px){
+
+}
+
+/* screen size iphone6/7/8 Plus Horizantal*/
+@media(min-width: 736px){
+
+}
+
+
+/* screen size iphone X Horizantal*/
+@media (min-width: 812px){
+    .text-large{
+        font-size: 55px !important;
+    }
+    
+}
+
+/* screen size iPad Vertical*/
+@media(min-width: 768px){
+
+}
+
+/* screen size iPad Horizantal and iPad Pro Vertical*/
+@media(min-width: 1024px){
+
+}
+
+/* screen size iPad Pro Horizantal */
+@media(min-width: 1366px){
+      
+}

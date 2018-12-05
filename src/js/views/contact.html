@@ -1,0 +1,69 @@
+<div class="contactBackground">    
+</div>
+<div style="width: 100%; height: 91.5vh;">
+    <div id="googleMap" style="width: 100%;height:100%;box-shadow: 0px 0px 20px 0px #333333;">
+
+    </div>
+</div>
+
+<oj-popup style="background: linear-gradient(to right, #59b0bf, #60B794); width: 50vw" 
+          
+          id="contactPopup"
+          tail="none" position.my.horizontal="center" position.my.vertical="center"
+          position.at.horizontal="center" position.at.vertical="center"
+          position.of="window"
+          modality="modeless" 
+          
+          data-bind="event:{'ojAnimateStart': contactAnimationListener}, style:{height: popUpHeight}"  
+          >
+    <div class="oj-flex-bar">
+        <div class="oj-flex-bar-end">
+            <div data-bind="click: collapseHeight" >
+                <span id="iconMinus" class="fas fa-minus fa-2x"></span> 
+            </div>           
+        </div>
+    </div>
+    <div data-bind="visible: divHide" >
+        <div id='contTitle' class="oj-flex oj-padding">
+            <div class="oj-flex-item">
+                <h2><em>Don’t hesitate to</em><br/> 
+                    contact me!</h2>
+            </div>
+        </div>
+        <br/>
+        <div class="oj-flex oj-padding oj-margin-bottom">
+            <div class="oj-flex-item">
+                <i class="fas fa-envelope fa-2x"></i>
+                <div class="oj-padding-top" data-bind="text: 'sunil.ui@outlook.com'"></div>
+            </div>
+            <div class="oj-flex-item">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <div class="oj-padding-top" data-bind="text: '+1 720-519-3360'"></div>
+            </div>
+            <div class="oj-flex-item">
+                <i class="fas fa-location-arrow fa-2x"></i>
+                <div id='addressDetails' class="oj-padding-top">
+                    <div data-bind="text: '45168 Gayton Terr,'"></div>
+                    <div data-bind="text: 'Ashburn, VA-20147,'"></div>
+                    <div data-bind="text: 'USA'"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="oj-margin-start oj-margin-end"/>
+        <div class="oj-flex-bar oj-sm-justify-content-center">
+            <div class="oj-flex-bar-start">
+                <div class="oj-margin oj-padding" data-bind="text: 'Check my social media !'"></div>
+            </div>
+            <div class="oj-flex-bar-end">
+                <i class="fab fa-facebook-f oj-margin oj-padding"></i>
+                <i class="fab fa-twitter oj-margin oj-padding"></i>
+                <i class="fab fa-linkedin-in oj-margin oj-padding"></i>
+            </div>
+        </div>
+<!--        <div class="oj-flex oj-padding">
+            <div class="oj-flex-item">
+                
+            </div>        
+        </div>-->
+    </div>
+</oj-popup>

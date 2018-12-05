@@ -1,0 +1,13 @@
+<div class="oj-flex">
+    <div class="oj-flex-item">
+        <oj-masonry-layout id="masonryLayout">
+            <!--ko foreach: samples--> 
+            <div class="mlParent" data-bind="css: sizeClass, style:{backgroundImage: 'url(../../../images/mobile/screen-' + id + '.png)'}">
+                <div class="mlChild">
+                    <a href="#" data-bind="text: title"></a>
+                </div>
+            </div>
+            <!--/ko--> 
+        </oj-masonry-layout> 
+    </div>       
+</div>

@@ -1,0 +1,109 @@
+.portfolioBackground{
+    /*background-image: url('images/cold.png');*/
+    /*background: linear-gradient(#60B794, #5EB2A2, #5BAEB0);*/
+    background: linear-gradient(45deg, rgba(85,72,158, 0.85), rgba(99,135,184, 0.85), rgba(106,162,196, 1));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.portfolioBackground + * {
+    position: relative;
+}
+
+
+.mlParent {
+    display: inline-block;
+    cursor: pointer;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+
+.mlChild{
+    height: 100%;
+    width: 100%;
+}
+
+.mlChild > a{
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mlParent:hover .mlChild:before, 
+.mlParent:focus .mlChild:before {
+    display: block;
+}
+
+.mlParent:hover{
+    -ms-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0px 7px 7px 0px rgba(0,0,0, 0.25);
+}
+
+.mlParent:hover a, .mlParent:focus a {
+    display: block;   
+}
+
+.mlChild:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(127,184,64, 0.30);
+    background-color: rgba(0,0,0, 0.30);
+    
+}
+
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected a.oj-tabbar-item-content .oj-tabbar-item-label{
+    color: #ffffff !important;
+}
+
+.oj-tabbar-horizontal.oj-tabbar-icon-only .oj-tabbar-item.oj-selected, .oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected{
+    border-color: #ffffff;
+}
+
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected{
+    border: 3px solid #ffffff !important;
+    border-radius: 40px;
+}
+
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item:not(.oj-disabled) a.oj-tabbar-item-content .oj-tabbar-item-label{
+    color: #000000;
+}
+
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-hover:not(.oj-selected){
+    border: 3px solid #f2f2f2 !important;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+}
